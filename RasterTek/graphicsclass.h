@@ -6,7 +6,8 @@
 //////////////
 // INCLUDES //
 //////////////
-#include <windows.h>
+//#include <windows.h>
+#include "d3dclass.h"
 
 
 /////////////
