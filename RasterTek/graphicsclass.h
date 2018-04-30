@@ -1,13 +1,17 @@
-#pragma once
+////////////////////////////////////////////////////////////////////////////////
+// Filename: graphicsclass.h
+////////////////////////////////////////////////////////////////////////////////
 #ifndef _GRAPHICSCLASS_H_
 #define _GRAPHICSCLASS_H_
 
 
-//////////////
-// INCLUDES //
-//////////////
-//#include <windows.h>
+///////////////////////
+// MY CLASS INCLUDES //
+///////////////////////
 #include "d3dclass.h"
+#include "cameraclass.h"
+#include "modelclass.h"
+#include "colorshaderclass.h"
 
 
 /////////////
@@ -37,7 +41,10 @@ private:
 	bool Render();
 
 private:
-
+	D3DClass* m_Direct3D;
+	CameraClass* m_Camera;
+	ModelClass* m_Model;
+	ColorShaderClass* m_ColorShader;
 };
 
 #endif
